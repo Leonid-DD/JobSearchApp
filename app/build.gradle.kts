@@ -40,15 +40,19 @@ dependencies {
 
     // Kotlin Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     // Dagger2 for Dependency Injection
-    implementation("com.google.dagger:dagger:2.45")
-    kapt("com.google.dagger:dagger-compiler:2.45")
+    implementation("com.google.dagger:dagger:2.46.1")
+    kapt("com.google.dagger:dagger-compiler:2.46.1")
+
+    // For Kotlin support in Dagger2
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.5")
+    kapt("androidx.lifecycle:lifecycle-compiler:2.8.5")
 
     // AdapterDelegates for RecyclerView
     implementation("com.hannesdorfmann:adapterdelegates4-kotlin-dsl:4.3.0")
