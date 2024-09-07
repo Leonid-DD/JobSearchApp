@@ -1,9 +1,8 @@
 package com.example.jobsearchapp.di
 
-import androidx.fragment.app.Fragment
 import com.example.jobsearchapp.MainActivity
-import com.example.jobsearchapp.presentation.JobsListFragment
-import com.example.jobsearchapp.presentation.SignInFragment
+import com.example.jobsearchapp.presentation.fragments.JobsListFragment
+import com.example.jobsearchapp.presentation.fragments.SignInFragment
 import dagger.Component
 import javax.inject.Singleton
 

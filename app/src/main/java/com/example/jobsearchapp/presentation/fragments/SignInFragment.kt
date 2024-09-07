@@ -1,12 +1,6 @@
-package com.example.jobsearchapp.presentation
+package com.example.jobsearchapp.presentation.fragments
 
-import android.os.Bundle
-import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.example.jobsearchapp.App
-import com.example.jobsearchapp.presentation.viewmodel.ViewModelFactory
-import javax.inject.Inject
 
 class SignInFragment : Fragment() {
 

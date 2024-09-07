@@ -1,4 +1,4 @@
-package com.example.jobsearchapp.presentation
+package com.example.jobsearchapp.presentation.fragments
 
 import android.os.Bundle
 import android.view.View
