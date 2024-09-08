@@ -22,6 +22,6 @@ class RepositoryModule {
     @Provides
     @Singleton
     fun provideLocalDataSource(context: Context): LocalDataSource {
-        return LocalDataSourceImpl(context)  // Local cache (can be Room, SharedPreferences)
+        return LocalDataSourceImpl(context)
     }
 }
