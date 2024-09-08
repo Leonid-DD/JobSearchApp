@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black">
+
+    <!-- Code sent text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправили код на example@mail.ru"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Напишите его, чтобы подтвердить, что это вы, а не кто-то другой входит в личный кабинет"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:layout_marginBottom="20dp" />
+
+    <!-- 4-digit input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <!-- 4 input fields for the digits -->
+        <EditText
+            android:id="@+id/digit1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/input_background"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:fontFamily="@font/sf_pro_display_medium"/>
+
+        <EditText
+            android:id="@+id/digit2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/input_background"
+            android:maxLength="1"
+            android:layout_marginStart="10dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/sf_pro_display_medium"/>
+
+        <EditText
+            android:id="@+id/digit3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/input_background"
+            android:maxLength="1"
+            android:layout_marginStart="10dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/sf_pro_display_medium"/>
+
+        <EditText
+            android:id="@+id/digit4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/input_background"
+            android:maxLength="1"
+            android:layout_marginStart="10dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/sf_pro_display_medium"/>
+    </LinearLayout>
+
+    <!-- Button: Подтвердить -->
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подтвердить"
+        android:enabled="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:backgroundTint="@color/blue" />
+
+</LinearLayout>
