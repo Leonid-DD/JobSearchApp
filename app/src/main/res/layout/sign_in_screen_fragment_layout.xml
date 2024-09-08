@@ -68,7 +68,7 @@
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 android:fontFamily="@font/sf_pro_display_regular"
-                android:backgroundTint="#0077FF" />
+                android:backgroundTint="@color/blue" />
 
             <!-- Войти с паролем -->
             <Button
@@ -119,7 +119,7 @@
             android:textColor="@color/white"
             android:textSize="14sp"
             android:fontFamily="@font/sf_pro_display_regular"
-            android:backgroundTint="#00D246"
+            android:backgroundTint="@color/green"
             android:layout_marginTop="10dp"/>
     </LinearLayout>
 

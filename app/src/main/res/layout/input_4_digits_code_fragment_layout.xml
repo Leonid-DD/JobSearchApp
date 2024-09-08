@@ -97,6 +97,6 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:fontFamily="@font/sf_pro_display_semibold"
-        android:backgroundTint="#0077FF" />
+        android:backgroundTint="@color/blue" />
 
 </LinearLayout>
