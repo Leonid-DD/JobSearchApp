@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@color/black"> <!-- Black background as in the screenshot -->
@@ -36,19 +36,28 @@
             android:fontFamily="@font/sf_pro_display_medium"/>
 
         <!-- Email Input -->
-        <EditText
-            android:id="@+id/emailInput"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Введите email"
-            android:inputType="textEmailAddress"
-            android:background="@drawable/input_background"
-            android:textColorHint="@color/grey3"
-            android:textColor="@color/white"
-            android:padding="12dp"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:fontFamily="@font/sf_pro_display_regular"/>
+            app:startIconDrawable="@drawable/email_icon"
+            app:startIconScaleType="center"
+            android:hint="Введите Email"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/input_background"
+                android:textColorHint="@color/grey3"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/sf_pro_display_regular"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Buttons: Продолжить and Войти с паролем -->
         <LinearLayout
