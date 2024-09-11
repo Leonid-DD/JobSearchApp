@@ -5,7 +5,7 @@ import com.example.data.local.LocalDataSource
 import com.example.data.local.LocalDataSourceImpl
 import com.example.data.network.JobApiService
 import com.example.data.repository.JobRepositoryImpl
-import com.example.domain.repository.JobRepository
+import com.example.data.repository.JobRepository
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

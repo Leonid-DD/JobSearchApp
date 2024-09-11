@@ -1,7 +1,6 @@
 package com.example.data.repository
 
 import com.example.data.network.JobApiService
-import com.example.domain.repository.JobRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

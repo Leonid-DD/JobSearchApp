@@ -1,6 +1,6 @@
 package com.example.jobsearchapp.di
 
-import com.example.domain.repository.JobRepository
+import com.example.data.repository.JobRepository
 import com.example.domain.usecase.FetchOffersUseCase
 import com.example.domain.usecase.FetchVacanciesUseCase
 import dagger.Module

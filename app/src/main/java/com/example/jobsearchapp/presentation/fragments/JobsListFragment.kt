@@ -5,11 +5,12 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.jobsearchapp.App
+import com.example.jobsearchapp.R
 import com.example.jobsearchapp.presentation.viewmodel.JobsViewModel
 import com.example.jobsearchapp.presentation.viewmodel.ViewModelFactory
 import javax.inject.Inject
 
-class JobsListFragment : Fragment() {
+class JobsListFragment : Fragment(R.layout.main_page_screen_layout) {
 
     @Inject
     lateinit var viewModelFactory: ViewModelFactory
@@ -26,8 +27,8 @@ class JobsListFragment : Fragment() {
         jobsViewModel = ViewModelProvider(this, viewModelFactory).get(JobsViewModel::class.java)
 
         // Observe LiveData and update UI
-        jobsViewModel.jobData.observe(viewLifecycleOwner, { jobList ->
-            // Update RecyclerView with jobs
-        })
+//        jobsViewModel.jobData.observe(viewLifecycleOwner, { jobList ->
+//            // Update RecyclerView with jobs
+//        })
     }
 }
